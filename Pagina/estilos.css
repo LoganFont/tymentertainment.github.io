@@ -1,0 +1,101 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: #afafaf;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background: #fff;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.header-content{
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+}
+
+.botones{
+    height: 60px;
+}
+
+.botones ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+}
+
+.botones ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.boton-especial {
+    height: 60px;
+}
+
+.boton-especial ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+}
+
+.boton-especial ul li {
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones ul li:hover {
+    margin: 0px 27px;
+    transition: 650ms;
+    background: rgba(0, 0, 0, 0.205);
+}
+
+.botones ul li a {
+    font-size: 25px;
+    font-family: 'Gemunu Libre', sans-serif;
+    color: black;
+}
+
+.selected:before {
+    content: '';
+    width: 100%;
+    height: 6px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
